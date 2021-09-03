@@ -96,6 +96,7 @@ sudo yum makecache fast
     
 # 4. 安装Docker相关客户端,服务端 ce社区版 ,ee企业版
 sudo yum install docker-ce docker-ce-cli containerd.io		# 默认安装最新
+sudo yum install docker-ce docker-ce-cli containerd.io --allowerasing	# centos8 冲突
 
 # 5. 启动Docker
 systemctl start docker
